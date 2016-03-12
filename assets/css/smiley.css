@@ -1,0 +1,390 @@
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.emojis-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.emoji {
+  border-radius: 50%;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #FFEB96;
+}
+
+.emoji1:after, .emoji1:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #414141;
+  border-radius: 50%;
+  top: 48px;
+  -webkit-animation: emoji1-face-move 5s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
+          animation: emoji1-face-move 5s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.emoji1:after {
+  left: 30px;
+}
+.emoji1:before {
+  left: 85px;
+}
+.emoji1 .mouth {
+  position: absolute;
+  height: 3px;
+  width: 35px;
+  background-color: #414141;
+  border-radius: 5px;
+  top: 68px;
+  left: 45px;
+  -webkit-animation: emoji1-face-move 5s ease-in-out infinite;
+          animation: emoji1-face-move 5s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes emoji1-eyes-blink {
+  0% {
+    height: 10px;
+  }
+  97% {
+    height: 10px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes emoji1-eyes-blink {
+  0% {
+    height: 10px;
+  }
+  97% {
+    height: 10px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@-webkit-keyframes emoji1-face-move {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  30% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  35% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  65% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  85% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes emoji1-face-move {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  30% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  35% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  65% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  85% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.emoji2:after, .emoji2:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #414141;
+  border-radius: 50%;
+  top: 48px;
+  -webkit-animation: emoji2-face-move 4s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
+          animation: emoji2-face-move 4s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
+}
+.emoji2:after {
+  left: 18px;
+}
+.emoji2:before {
+  left: 72px;
+}
+.emoji2 .mouth {
+  position: absolute;
+  height: 22px;
+  overflow: hidden;
+  border-top: 4px solid #F3F3F3;
+  width: 30px;
+  background-color: #F7AA86;
+  border-radius: 25px;
+  top: 68px;
+  left: 35px;
+  -webkit-animation: emoji2-face-move 4s ease-in-out infinite, emoji2-mouth-move 4s ease-in-out infinite;
+          animation: emoji2-face-move 4s ease-in-out infinite, emoji2-mouth-move 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes emoji2-face-move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  55% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  95% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes emoji2-face-move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  55% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  95% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes emoji2-mouth-move {
+  0% {
+    height: 22px;
+    border-top: 4px solid #F3F3F3;
+  }
+  55% {
+    height: 22px;
+    width: 30px;
+    left: 35px;
+    border-top: 4px solid #F3F3F3;
+  }
+  60% {
+    height: 10px;
+    width: 15px;
+    left: 42px;
+    border-top: 4px solid #FFEB96;
+  }
+  95% {
+    height: 10px;
+    width: 15px;
+    left: 42px;
+    border-top: 4px solid #FFEB96;
+  }
+  100% {
+    height: 22px;
+    width: 30px;
+    left: 35px;
+    border-top: 4px solid #F3F3F3;
+  }
+}
+@keyframes emoji2-mouth-move {
+  0% {
+    height: 22px;
+    border-top: 4px solid #F3F3F3;
+  }
+  55% {
+    height: 22px;
+    width: 30px;
+    left: 35px;
+    border-top: 4px solid #F3F3F3;
+  }
+  60% {
+    height: 10px;
+    width: 15px;
+    left: 42px;
+    border-top: 4px solid #FFEB96;
+  }
+  95% {
+    height: 10px;
+    width: 15px;
+    left: 42px;
+    border-top: 4px solid #FFEB96;
+  }
+  100% {
+    height: 22px;
+    width: 30px;
+    left: 35px;
+    border-top: 4px solid #F3F3F3;
+  }
+}
+.emoji3:after, .emoji3:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #414141;
+  border-radius: 50%;
+  top: 48px;
+  -webkit-animation: emoji3-face-move 0.25s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
+          animation: emoji3-face-move 0.25s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.emoji3:after {
+  left: 18px;
+}
+.emoji3:before {
+  left: 72px;
+}
+.emoji3 .mouth {
+  position: absolute;
+  height: 22px;
+  top: 68px;
+  left: 35px;
+  -webkit-animation: emoji3-mouth-move 0.25s ease-in-out infinite;
+          animation: emoji3-mouth-move 0.25s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.emoji3 .mouth:before, .emoji3 .mouth:after {
+  content: '';
+  border-radius: 100%;
+  position: absolute;
+  border: 3px solid transparent;
+  border-top: 3px solid #414141;
+  border-left: 3px solid #414141;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.emoji3 .mouth:before {
+  height: 15px;
+  width: 15px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  left: 5px;
+}
+.emoji3 .mouth:after {
+  height: 10px;
+  width: 10px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 12px;
+  left: 8px;
+}
+
+@-webkit-keyframes emoji3-face-move {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+@keyframes emoji3-face-move {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+@-webkit-keyframes emoji3-mouth-move {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+@keyframes emoji3-mouth-move {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
