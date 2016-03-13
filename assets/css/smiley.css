@@ -39,17 +39,17 @@
   background-color: #414141;
   border-radius: 50%;
   top: 48px;
-  transition: all 500ms linear;
+  transition: all 100ms linear;
   -webkit-animation: emoji1-face-move 5s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
           animation: emoji1-face-move 5s ease-in-out infinite, emoji1-eyes-blink 2s ease-in-out infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
 .emoji1:after {
-  left: 30px;
+  left: 20px;
 }
 .emoji1:before {
-  left: 85px;
+  left: 75px;
 }
 .emoji1 .mouth {
   position: absolute;
@@ -58,8 +58,8 @@
   background-color: #414141;
   border-radius: 5px;
   top: 68px;
-  left: 45px;
-  transition: all 500ms linear;
+  left: 35px;
+  transition: all 100ms linear;
   -webkit-animation: emoji1-face-move 5s ease-in-out infinite;
           animation: emoji1-face-move 5s ease-in-out infinite;
   -webkit-animation-direction: alternate;
@@ -185,7 +185,7 @@
   border-radius: 25px;
   top: 68px;
   left: 35px;
-  transition: all 500ms ease;
+  transition: all 200ms ease;
   -webkit-animation: emoji2-face-move 4s ease-in-out infinite, emoji2-mouth-move 4s ease-in-out infinite;
           animation: emoji2-face-move 4s ease-in-out infinite, emoji2-mouth-move 4s ease-in-out infinite;
 }
@@ -295,14 +295,35 @@
     border-top: 4px solid #F3F3F3;
   }
 }
-.normal:after, .normal:before {
+.happy:after, .happy:before {
     position: absolute;
     content: "";
     width: 18px;
+    height:10px;
     background-color: #FFEB96;
     border: 3px solid #414141;
     border-bottom: none;
     border-radius: 80px 80px 0 0;
-    top: 45px;
-    transition: all 500ms linear;
+    top: 35px;
+    transition: all 100ms linear;
   }
+
+  .happy:after {
+  left: 18px;
+}
+.happy:before {
+  left: 72px;
+}
+
+.happy .mouth {
+    position: absolute;
+    height: 25px;
+    overflow: hidden;
+    border-top: 4px solid #F3F3F3;
+    width: 51px;
+    background-color: #F7AA86;
+    border-radius: 0 0 80px 80px;
+    top: 58px;
+    left: 27px;
+    transition: all 100ms linear;
+}
