@@ -1,13 +1,13 @@
-var smiley = document.querySelector(".emoji1");
+var smiley = document.querySelector(".emoji");
 var mouth = document.querySelector(".mouth");
 
-smiley.onmouseover = function() {
+smiley.onmouseenter = function() {
 	happyState();
 	// normalState();
 	// setTimeout(function(){ happyState(); }, 3000);
 	
 }
-smiley.onmouseout = function() {
+smiley.onmouseleave = function() {
 	unhappyState();
 }
 

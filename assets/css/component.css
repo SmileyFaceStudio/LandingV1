@@ -6,7 +6,7 @@
 	margin: 0 auto;
 }
 
-.morph-button > button {
+/*.morph-button > button {
 	position: relative;
 	padding: 0 1em;
 	border: none;
@@ -17,7 +17,7 @@
 	font-weight: 700;
 	line-height: 80px;
 	overflow: hidden;
-}
+}*/
 
 .morph-button.open > button {
 	/*pointer-events: none;*/
@@ -40,8 +40,10 @@
 }
 
 .morph-button-inflow > button {
-	width: 100%;
+	width: 80%;
 	height: 70px;
+	border: none;
+	outline: none;
 }
 
 .morph-button-inflow .morph-content {
@@ -56,6 +58,7 @@
 	font-weight: 700;
 	font-size: 1.5em;
 	line-height: 70px;
+	border-radius: 50px;
 }
 
 /* Colors and sizes for individual in flow buttons */
