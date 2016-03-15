@@ -1,14 +1,26 @@
 var smiley = document.querySelector(".emoji");
 var mouth = document.querySelector(".mouth");
+var counter = 1;
 
-smiley.onmouseenter = function() {
-	happyState();
-	// normalState();
-	// setTimeout(function(){ happyState(); }, 3000);
-	
-}
-smiley.onmouseleave = function() {
-	unhappyState();
+if (/Mobi/.test(navigator.userAgent)) {
+    smiley.onclick = function() {
+    	console.log("click");
+    	console.log(counter);
+    	counter++;
+    	if (isEven(counter)) {
+    		return happyState();
+    	}
+    	return unhappyState();
+    }
+} else {
+	smiley.onmouseenter = function() {
+		happyState();
+		// normalState();
+		// setTimeout(function(){ happyState(); }, 3000);
+	}
+	smiley.onmouseleave = function() {
+		unhappyState();
+	}
 }
 
 function happyState () {
@@ -23,6 +35,13 @@ function unhappyState () {
 	classie.add(smiley, "emoji1");
 }
 
+function isEven(n) {
+   return n % 2 == 0;
+}
+
+function isOdd(n) {
+   return Math.abs(n % 2) == 1;
+}
 // function normalState() {
 // 	classie.remove(smiley, "emoji1");
 // 	classie.remove(smiley, "emoji2");
