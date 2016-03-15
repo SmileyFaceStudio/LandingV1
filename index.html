@@ -6,23 +6,23 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Smiley Face Studio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/component.css" />
 		<link rel="stylesheet" href="assets/css/smiley.css" />
+		<link rel="stylesheet" href="assets/css/background.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="assets/js/modernizr.custom.js"></script>
 	</head>
 	<body class="is-loading">
-
+		<canvas id="canvas"></canvas>
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Main -->
 					<section id="main">
 						<header>
@@ -32,7 +32,7 @@
         							<div class="mouth"></div>
     							</div>
 							</div>
-							
+
 							<h1>Smiley Face Studios</h1>
 							<p>We create beauty by engineering products that emulate aesthetics.</p>
 						</header>
@@ -89,6 +89,7 @@
 			<script src="assets/js/classie.js"></script>
 			<script src="assets/js/uiMorphingButton_inflow.js"></script>
 			<script type="text/javascript" src="assets/js/smiley.js"></script>
+			<script type="text/javascript" src="assets/js/background.js"></script>
 			<script>
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
