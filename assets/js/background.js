@@ -10,7 +10,7 @@
     this.canvas = document.getElementById('canvas');
     this.context = this.canvas.getContext('2d');
     this.cols = Math.floor($(window).width() / 24) + 2;
-    this.rows = Math.floor($(window).height() / 24) + 1;
+    this.rows = Math.floor($(window).height() / 24) + 3;
     
     this.canvas.width = $(window).width();
     this.canvas.height = $(window).height();
@@ -72,8 +72,14 @@
     }, 10);
   };
 
-$(window).resize(function() {
-  init();
-});
+  function isMobilePhone() {
+    return (/android|blackberry|iemobile|iphone|ipod|opera mini|webos/i).test(navigator.userAgent);
+  }
 
-init();
+  if (!isMobilePhone()) {
+    $(window).resize(function() {
+      init();
+    });
+
+    init();
+  }
