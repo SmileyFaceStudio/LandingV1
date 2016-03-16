@@ -9,11 +9,11 @@
   function init(){
     this.canvas = document.getElementById('canvas');
     this.context = this.canvas.getContext('2d');
-    this.cols = Math.floor($(document).width() / 24) + 2;
-    this.rows = Math.floor($(document).height() / 24) + 1;
+    this.cols = Math.floor($(window).width() / 24) + 2;
+    this.rows = Math.floor($(window).height() / 24) + 1;
     
-    this.canvas.width = $(document).width();
-    this.canvas.height = $(document).height();
+    this.canvas.width = $(window).width();
+    this.canvas.height = $(window).height();
     
     this.drawBackground();
     this.animate();
