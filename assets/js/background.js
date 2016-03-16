@@ -19,6 +19,12 @@ var livePatern = {
     this.drawBackground();
     this.animate();
   },
+
+  resizeCanvas: function() {
+    htmlCanvas.width = window.innerWidth;
+    htmlCanvas.height = window.innerHeight;
+    redraw();
+  },
   
   drawTriangle: function(x, y, color, inverted){
     inverted = inverted == undefined ? false : inverted;
